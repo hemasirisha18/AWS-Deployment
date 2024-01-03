@@ -1,5 +1,6 @@
-from flask import Flask,render_template
-
+from flask import Flask,render_template,request
+import pickle 
+import numpy as np
 # create a Flask object
 application = Flask(__name__)
 '''@app.route('/')
