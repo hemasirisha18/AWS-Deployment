@@ -18,7 +18,7 @@ with open("House_Price.pkl","rb") as f:
           model = pickle.load(f)
 @application.route('/',methods=['GET'])
 def home():
-    return render_template("index.html")x
+    return render_template("index.html")
 @application.route('/predict',methods = ['POST'])
 def predict():
     Rooms = int(request.form['bedrooms'])
